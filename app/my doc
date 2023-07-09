@@ -1,0 +1,129 @@
+{
+    id: 1, 
+    name: 'Brave',
+    hour: '1h 33m',
+    genre: 'Drama, Romance' ,
+    description: "Determined to make her own path in life, Princess Merida defies a custom that brings chaos to her kingdom. Granted one wish, Merida must rely on her bravery and her archery skills to undo a beastly curse"
+},
+
+{
+    id: 2,
+    name: 'Moana',
+    hour: '1h,47m',
+    description: "In Ancient Polynesia, when a terrible curse incurred by the Demigod Maui reaches Moana's island, she answers the Ocean's call to seek out the Demigod to set things right.",
+    genre: 'Drama, Romance'
+},
+
+{
+    id: 3, 
+    name: 'Mulan',
+    hour: '1h,27m',
+    description: "To save her father from death in the army, a young maiden secretly goes in his place and becomes one of China's greatest heroines in the process.",
+    genre: 'Drama, Romance'
+},
+
+{
+    id: 4,
+    name: 'He named me malala',
+    hour: '1h,27m',
+    description: "'A look at the events leading up to the Taliban's attack on Pakistani schoolgirl Malala Yousafzai for speaking out on girls' education, followed by the aftermath, including her speech to the United Nations.",
+    genre: 'Drama, Romance'
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*const Movies = () => {
+    const [item,setItem]=useState(data);
+    return(
+        <div className="movies" >
+            <div className="movie_image" >
+                    <img src="image 1.svg"/>
+            </div>     
+            <div className="movie_details">
+                {item.map((ele)=>
+                   <div key={ele.id} className="imformation">
+                      <p>{ele.name}</p>
+                      <p>{ele.id}</p>
+                      <p>{ele.hour}</p>
+                      <p>{ele.description}</p>
+                      <p>{ele.genre}</p>
+                   </div>
+                )}
+            </div>
+            <div className="movie_action" > <Action/>
+            </div>
+        </div>   
+    );    
+};
+/*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<Movies 
+                id={Data[0]["id"]}
+                name={Data[0]["name"]}
+                hour={Data[0]["hour"]}
+                description={Data[0]["description"]} 
+                genre={Data[0]["genre"]}
+            />
+            <Movies
+                id={Data[1]["id"]}
+                name={Data[1]["name"]}
+                hour={Data[1]["hour"]}
+                description={Data[1]["description"]} 
+                genre={Data[1]["genre"]}
+            />
+              <Movies
+                id={Data[2]["id"]}
+                name={Data[2]["name"]}
+                hour={Data[2]["hour"]}
+                description={Data[2]["description"]} 
+                genre={Data[2]["genre"]}
+            />
+         
+           <Movies
+                id={Data[3]["id"]}
+                name={Data[3]["name"]}
+                hour={Data[3]["hour"]}
+                description={Data[3]["description"]} 
+                genre={Data[3]["genre"]}
+            />
+         
+           <Movies
+                id={Data[4]["id"]}
+                name={Data[4]["name"]}
+                hour={Data[4]["hour"]}
+                description={Data[4]["description"]} 
+                genre={Data[4]["genre"]}
+            />
+         

@@ -5,7 +5,8 @@
 
 .header2{
     background-color:black;
-    width:100%;
+    width:1600px;
+    margin:auto;
     height:80px;
 }
 
@@ -18,34 +19,33 @@
 }
 
 .header22{
-    width:103px;
+    width:90px;
     height:48px;
     float:left;
     margin-top:25px;    
 }
 
 .header23{
-    width:56px;
+    width:40px;
     height:30px;
     float:left;
-    margin-left:1200px;
+    margin-left:1000px;
     margin-top:30px;    
 }
 
 .header24{
-    width:94px;
+    width:40px;
     height:30px;
     float:right;
     margin-right:200px;
     margin-top:30px;    
 }
 
-.movie1{
-    width:1600px;
-    height:277px;
-    margin:auto;
-    background-color:silver;
-    border:1px solid black;
+.movies{
+   height:300px;
+   width:1600px;
+   margin:auto;
+   background-color:silver;
 }
 
 .movie_image{
@@ -67,7 +67,8 @@
     width:1365px;
     height:75px;
     padding:0px 9px 0px 0px;
-    float:left;
+    float:right;
+  
 }
 
 .add_movies{
@@ -106,7 +107,7 @@
     padding:8px;
     border-radius:32px;
     float:left;
-    border-color:1px solid black; 
+    border: 1px solid rgba(94, 94, 117, 1); 
 }
 
 .dislike{
