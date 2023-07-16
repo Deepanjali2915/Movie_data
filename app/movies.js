@@ -1,12 +1,13 @@
 import "./globals.css";
-import Action from "./action.js";
-import {Data} from'./data.js';
+import Rating_count from "./rating_count.js";
+import Delete from "./delete.js";
+import {m_Data} from'./data.js';
 
-const Movies=(props)=>{
+const Movie_raw=({props,onDelete})=>{
     return(
         <div className="movies" >
             <div className="movie_image" >
-                <img src="image 1.svg"/>
+                <img src={props.picture}/>
             </div>     
             <div className="movie_details">
                 <p>{props.id}</p>
@@ -15,15 +16,14 @@ const Movies=(props)=>{
                 <p>{props.description}</p>
                 <p>{props.genre}</p>   
             </div>
-            <div className="movie_action" > <Action/>
+            <div className="movie_action" > 
+                <Rating_count/>
+                 <div > 
+                    <Delete onDelete={onDelete}/>    
+                </div>
+    
             </div>
         </div>   
     );    
 };
-
-
-export default Movies;
-
-
-
-
+export default Movie_raw;
