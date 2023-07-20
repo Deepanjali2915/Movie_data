@@ -1,27 +1,20 @@
-import React, {useState} from 'react';
 
+import {m_Data} from "./data.js";
                                                                                                                                                                                                                     
-const Rating=()=>{
-    const [count, setCount] =useState(0);
+const Rating=({onLike,count,onDislike})=>{
     
-    const handleLike=()=>{
-        setCount(count+1);
-    }
-    
-    const handleDisike=()=>{
-        setCount(count-1);
-    }
-
     return(
         <>
             <div className="rating_count">
                 <div className="like">
-                    <button onClick={handleLike}>
-                        <img src="Icon - Like.svg" /> </button>
+                    <button onClick={onLike}>
+                        <img src="Icon - Like.svg" /> 
+                    </button>
                 </div>
-                <div className="count"> {count} </div>
+                <div className="count"> {count}
+                 </div>
                 <div className="dislike">
-                    <button onClick={handleDisike}>
+                    <button onClick={onDislike}>
                         <img src="Icon - Like (1).svg" /> </button>
                 </div>
             </div>    
@@ -29,3 +22,5 @@ const Rating=()=>{
     );      
 };
 export default Rating;
+
+

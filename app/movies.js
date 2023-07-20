@@ -1,9 +1,18 @@
 import "./globals.css";
+import React, {useState} from 'react';
 import Rating_count from "./rating_count.js";
 import Delete from "./delete.js";
 import {m_Data} from'./data.js';
 
 const Movie_raw=({props,onDelete})=>{
+    const [count, setCount] =useState(0);
+    
+    const handleLike=()=>{
+        setCount(count+1);
+    }
+    const handleDislike=()=>{
+        setCount(count-1);
+    }
     return(
         <div className="movies" >
             <div className="movie_image" >
@@ -17,7 +26,9 @@ const Movie_raw=({props,onDelete})=>{
                 <p>{props.genre}</p>   
             </div>
             <div className="movie_action" > 
-                <Rating_count/>
+                <Rating_count 
+                    onLike={handleLike} count={count} onDislike={handleDislike}
+                />
                  <div > 
                     <Delete onDelete={onDelete}/>    
                 </div>
